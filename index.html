@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-right">
+            <h1>COFFEE</h1>
+        </div>
+        <div class="nav-left">
+            <h3>Home</h3>
+            <h3>Price</h3>
+            <h3>Contact</h3>
+            <h3>About</h3>
+            <h3>Login</h3>
+        </div>
+    </nav>
+    <header>
+        <div class="header-left">
+            <div class="hallo">Halo, Selamat Datang!</div>
+            <div class="jasa">Jasa Pembuatan Website </br>
+                Professional, Termurah dan </br>
+                Terpercaya no 1</div>
+            <div class="buat">Buat bisnis mu menjadi lebih dikenal oleh banyak orang</br>
+                Daftar sekarang gratis!</div>
+            <div class="regis">
+                <div class="daftar">Daftar</div>
+                <div class="login">Login</div>
+            </div>
+        </div>
+        <div class="header-right">
+            <img src="web.png" class="gambar" alt="">
+        </div>
+    </header>
+    <main>
+        <h2>Produk Kami</h2>
+        <div class="slider">
+            <div class="slide show"><img src="image.png" alt=""></div>
+            <div class="slide"><img src="image.png" alt=""></div>
+            <div class="slide"><img src="image.png" alt=""></div>
+        </div>
+        <script>let slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                // Sembunyikan slide yang aktif
+                slides[currentSlide].classList.remove('show');
+                slides[currentSlide].classList.add('hide');
+            
+                // Tampilkan slide baru
+                slides[index].classList.remove('hide');
+                slides[index].classList.add('show');
+            
+                currentSlide = index;
+            }
+            
+            function nextSlide() {
+                // Tentukan index slide berikutnya
+                let nextIndex = (currentSlide + 1) % slides.length;
+            
+                // Tampilkan slide berikutnya
+                showSlide(nextIndex);
+            }
+            
+            // Tampilkan slide pertama saat halaman dimuat
+            showSlide(currentSlide);
+            
+            // Atur interval untuk mengubah slide setiap 5 detik
+            setInterval(nextSlide, 5000);
+            
+            </script>
+        
+    </main>
+    <div class="main2">
+        <h2>Mengapa Pilih Jasa Pembuatan  Website</br>
+            di COFFEE ?</h2>
+        <div class="content">
+            <div class="row1">
+                <div class="kotakbiru">
+                    <div class="logo"><img src="logo/logo1.png" alt=""></div>
+                    <div class="desk">Full Garansi</div>
+                    <p>Nikmati garansi 100% maintenance bug & </br>
+                        eror selama layanan website anda aktif</p>
+                </div>
+                <div class="kotakpink">
+                    <div class="logo"><img src="logo/logo1.png" alt=""></div>
+                    <div class="desk">Desain Website Profesional<br>& Responsif</div>
+                    <p>Kami desain tampilan website yang<br>
+                        intuitif dan responsif menyesuaikan plan <br>
+                       dan target bisnis anda</p>
+                </div>
+                <div class="kotakbiru">
+                    <div class="logo"><img src="logo/logo2.png" alt=""></div>
+                    <div class="desk">Website Anti Lemot<br> SEO Friendly</div>
+                    <p>Nikmati kecepatan website yang stabil dan<br>
+                        copywriting yang efektif untuk <br>
+                       website anda</p>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="kotakpink">
+                    <div class="logo"><img src="logo/logo3.png" alt=""></div>
+                    <div class="desk">Tutorial Penggunaan Website</div>
+                    <p>Nikmati garansi 100% maintenance bug & <br>
+                        eror selama layanan website anda aktif</p>
+                </div>
+                <div class="kotakbiru"><div class="logo"><img src="logo/logo4.png" alt=""></div>
+                <div class="desk">Dikerjakan Tim Profesional</div>
+                <p>Nikmati garansi 100% maintenance bug & <br>
+                    eror selama layanan website anda aktif</p></div>
+                <div class="kotakpink"><div class="logo"><img src="logo/logo5.png" alt=""></div>
+                <div class="desk">Dukungan Konsultasi Gratis</div>
+                <p>Jangan khawatir, kami memahami<br>
+                    setiap rencana kebutuhan bisnis <br>
+                   website anda</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="main3">
+        <h2>Pilih Paket yang Cocok untuk Website Anda</h2>
+        <p>Tim profesional kami akan bantu wujudkan website anda dengan memilih paket yang tepat. Konsultasi Gratis!<br>
+            hingga website anda tayang</p>
+        <h1>Paket Hemat</h1>
+        <div class="content">
+            <div class="baris">
+                <div class="box">
+                    <div class="color"></div>
+                    <h3>Paket Hemat Banget</h3>
+                    <p class="teks">Rekomendasi buat kamu  yang mau coba-coba
+                        buatkan web pribadi </p>
+                    <div class="angka">Rp. 500.000</div>
+                    <hr>
+                    <ul>
+                        <li><img src="paket/globe.png" alt=""> 1 Halaman website</li>
+                        <li><img src="paket/globe.png" alt=""> Free Domain .com</li>
+                        <li><img src="paket/globe.png" alt=""> Aktif 1 Tahun</li>
+                        <li><img src="paket/globe.png" alt=""> Basic landing page design</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa ubah gambar</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa copy writing</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa edit </li>
+                    </ul>
+                    <hr>
+                    <div class="last">
+                        <div class="cs">Pilih Paket</div>
+                        <div class="gambar"><img src="paket/chart.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="color blue"></div>
+                    <h3>Paket Hemat Banget</h3>
+                    <p class="teks">Rekomendasi buat kamu  yang mau coba-coba
+                        buatkan web pribadi </p>
+                    <div class="angka">Rp. 750.000</div>
+                    <hr>
+                    <ul>
+                        <li><img src="paket/globe.png" alt=""> 1 Halaman website</li>
+                        <li><img src="paket/globe.png" alt=""> Free Domain .com</li>
+                        <li><img src="paket/globe.png" alt=""> Aktif 1 Tahun</li>
+                        <li><img src="paket/globe.png" alt=""> Basic landing page design</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa ubah gambar</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa copy writing</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa edit </li>
+                    </ul>
+                    <hr>
+                    <div class="last">
+                        <div class="cs">Pilih Paket</div>
+                        <div class="gambar"><img src="paket/chart.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="color pink"></div>
+                    <h3>Paket Hemat Banget</h3>
+                    <p class="teks">Rekomendasi buat kamu  yang mau coba-coba
+                        buatkan web pribadi </p>
+                    <div class="angka">Rp. 1.000.000</div>
+                    <hr>
+                    <ul>
+                        <li><img src="paket/globe.png" alt=""> 1 Halaman website</li>
+                        <li><img src="paket/globe.png" alt=""> Free Domain .com</li>
+                        <li><img src="paket/globe.png" alt=""> Aktif 1 Tahun</li>
+                        <li><img src="paket/globe.png" alt=""> Basic landing page design</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa ubah gambar</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa copy writing</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa edit </li>
+                    </ul>
+                    <hr>
+                    <div class="last">
+                        <div class="cs">Pilih Paket</div>
+                        <div class="gambar"><img src="paket/chart.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="color green"></div>
+                    <h3>Paket Hemat Banget</h3>
+                    <p class="teks">Rekomendasi buat kamu  yang mau coba-coba
+                        buatkan web pribadi </p>
+                    <div class="angka">Rp. 2.000.000</div>
+                    <hr>
+                    <ul>
+                        <li><img src="paket/globe.png" alt=""> 1 Halaman website</li>
+                        <li><img src="paket/globe.png" alt=""> Free Domain .com</li>
+                        <li><img src="paket/globe.png" alt=""> Aktif 1 Tahun</li>
+                        <li><img src="paket/globe.png" alt=""> Basic landing page design</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa ubah gambar</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa copy writing</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa edit </li>
+                    </ul>
+                    <hr>
+                    <div class="last">
+                        <div class="cs">Pilih Paket</div>
+                        <div class="gambar"><img src="paket/chart.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="baris">
+                <div class="box">
+                    <div class="color pink"></div>
+                    <h3>Paket Hemat Banget</h3>
+                    <p class="teks">Rekomendasi buat kamu  yang mau coba-coba
+                        buatkan web pribadi </p>
+                    <div class="angka">Rp. 10.000.000</div>
+                    <hr>
+                    <ul>
+                        <li><img src="paket/globe.png" alt=""> 1 Halaman website</li>
+                        <li><img src="paket/globe.png" alt=""> Free Domain .com</li>
+                        <li><img src="paket/globe.png" alt=""> Aktif 1 Tahun</li>
+                        <li><img src="paket/globe.png" alt=""> Basic landing page design</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa ubah gambar</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa copy writing</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa edit </li>
+                    </ul>
+                    <hr>
+                    <div class="last">
+                        <div class="cs">Pilih Paket</div>
+                        <div class="gambar"><img src="paket/chart.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="color"></div>
+                    <h3>Paket Hemat Banget</h3>
+                    <p class="teks">Rekomendasi buat kamu  yang mau coba-coba
+                        buatkan web pribadi </p>
+                    <div class="angka">Rp. 3.500.000</div>
+                    <hr>
+                    <ul>
+                        <li><img src="paket/globe.png" alt=""> 1 Halaman website</li>
+                        <li><img src="paket/globe.png" alt=""> Free Domain .com</li>
+                        <li><img src="paket/globe.png" alt=""> Aktif 1 Tahun</li>
+                        <li><img src="paket/globe.png" alt=""> Basic landing page design</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa ubah gambar</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa copy writing</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa edit </li>
+                    </ul>
+                    <hr>
+                    <div class="last">
+                        <div class="cs">Pilih Paket</div>
+                        <div class="gambar"><img src="paket/chart.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="color green"></div>
+                    <h3>Paket Hemat Banget</h3>
+                    <p class="teks">Rekomendasi buat kamu  yang mau coba-coba
+                        buatkan web pribadi </p>
+                    <div class="angka">Rp. 5.000.000</div>
+                    <hr>
+                    <ul>
+                        <li><img src="paket/globe.png" alt=""> 1 Halaman website</li>
+                        <li><img src="paket/globe.png" alt=""> Free Domain .com</li>
+                        <li><img src="paket/globe.png" alt=""> Aktif 1 Tahun</li>
+                        <li><img src="paket/globe.png" alt=""> Basic landing page design</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa ubah gambar</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa copy writing</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa edit </li>
+                    </ul>
+                    <hr>
+                    <div class="last">
+                        <div class="cs">Pilih Paket</div>
+                        <div class="gambar"><img src="paket/chart.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="color blue"></div>
+                    <h3>Paket Hemat Banget</h3>
+                    <p class="teks">Rekomendasi buat kamu  yang mau coba-coba
+                        buatkan web pribadi </p>
+                    <div class="angka">Rp. 7.500.000</div>
+                    <hr>
+                    <ul>
+                        <li><img src="paket/globe.png" alt=""> 1 Halaman website</li>
+                        <li><img src="paket/globe.png" alt=""> Free Domain .com</li>
+                        <li><img src="paket/globe.png" alt=""> Aktif 1 Tahun</li>
+                        <li><img src="paket/globe.png" alt=""> Basic landing page design</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa ubah gambar</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa copy writing</li>
+                        <li><img src="paket/globe.png" alt=""> Bisa edit </li>
+                    </ul>
+                    <hr>
+                    <div class="last">
+                        <div class="cs">Pilih Paket</div>
+                        <div class="gambar"><img src="paket/chart.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
